@@ -1,0 +1,39 @@
+{
+  "title": "م. محمود\nالمكاوي",
+  "subtitle": "منسق BIM | مهندس BIM الإنشائي والبنية التحتية | مدرب معتمد من أوتوديسك | تطبيق BIM",
+  "description": "مهندس BIM محترف بخبرة تتجاوز 13 عامًا في تقديم حلول البناء الرقمي المنسّقة عبر مشاريع البنية التحتية والمنشآت الإنشائية الكبرى في المملكة العربية السعودية ومصر. أركّز على تطبيق BIM والامتثال لمعيار ISO 19650 والتنسيق متعدد التخصصات وتدفقات العمل الرقمية العملية التي تُضيف قيمة ملموسة لنتائج المشاريع.",
+  "brandName": "Mahmoud Elmekawy Designs",
+  "profileImage": "assets/hero/Mahmoud Elmekawy.jpg",
+  "email": "melmekawy2020@gmail.com",
+  "phone": ["(+966)531175199", "(+20)1096189832"],
+  "location": ["Riyadh, Saudi Arabia", "Cairo, Egypt"],
+  "whatsapp": ["966531175199", "201096189832"],
+  "whatsappMessage": "مرحبًا! أريد الاستفسار عن خدماتك الهندسية.",
+  "stats": [
+    {
+      "label": "سنوات خبرة",
+      "number": "+13"
+    },
+    {
+      "label": "مشروع منجز",
+      "number": "+250"
+    },
+    {
+      "label": "متدرب",
+      "number": "+1500"
+    },
+    {
+      "label": "شركة متعاملة",
+      "number": "+20"
+    }
+  ],
+  "footerDescription": "مهندس BIM إنشائي ومتخصص في البنية التحتية، يقدم حلول BIM منسّقة ونمذجة بنية تحتية وتدريبًا احترافيًا وفق معيار ISO 19650.",
+  "footerLocation": "|| الرياض، المملكة العربية السعودية | متاح للاستشارات والتدريب",
+  "socialLinks": {
+    "facebook": "https://www.facebook.com/mahmoud.elmekawy20",
+    "linkedin": "https://www.linkedin.com/in/mahmoud-elmekawy/",
+    "youtube": "https://www.youtube.com/@Elmekawy-Bim",
+    "twitter": "https://x.com/superdigitalhe1",
+    "instagram": "https://www.instagram.com/m.elmaghawry54/"
+  }
+}

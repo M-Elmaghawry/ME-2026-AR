@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="خدمات هندسية احترافية ونمذجة معلومات البناء BIM وتصميم البنية التحتية">
+    <meta name="keywords" content="هندسة, BIM, بنية تحتية, استشارات, Revit, Civil 3D, AutoCAD, نيوم">
+    <meta name="author" content="محمود المكاوي">
+    <title>خدمات هندسية و BIM - م. محمود المكاوي</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="/">
+                    <img src="assets/Mahmoud Elmekawy Logo.png" alt="Logo" id="nav-logo">
+                </a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#hero" class="nav-link">الرئيسية</a></li>
+                <li><a href="#experience" class="nav-link">الخبرة</a></li>
+                <li><a href="#services" class="nav-link">الخدمات</a></li>
+                <li><a href="#courses" class="nav-link">الدورات</a></li>
+                <li><a href="#portfolio" class="nav-link">المشاريع</a></li>
+                <li><a href="#contact" class="nav-link">تواصل</a></li>
+                <li><a href="https://wa.me/00201096189832" class="btn-whatsapp-header" id="whatsappHeaderBtn" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> واتساب</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="container">
+            <div class="hero-wrapper">
+                <div class="hero-image">
+                    <img src="assets/profile.jpg" alt="Professional Profile" id="heroImage">
+                    <div class="typewriter-container">
+                        <span class="typewriter-text" id="typewriterText"></span>
+                        <span class="typewriter-cursor">|</span>
+                    </div>
+                </div>
+                <div class="hero-content">
+                    <h3 class="hero-greeting">من أنا؟</h3>
+                    <h1 class="hero-title" id="heroTitle"></h1>
+                    <p class="hero-subtitle" id="heroSubtitle"></p>
+                    <p class="hero-description" id="heroDescription"></p>
+                    <div class="hero-buttons">
+                        <a href="https://wa.me/00201096189832" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-whatsapp"></i> تواصل معي
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">طلب عرض سعر</a>
+                        <a href="https://www.linkedin.com/in/mahmoud-elmekawy/" class="btn btn-outline" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-linkedin"></i> لينكد إن
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats">
+        <div class="container">
+            <div class="stats-grid" id="statsGrid">
+                <!-- Stats will be loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Timeline Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">سنوات من الخبرة في كبرى المشاريع الهندسية</h2>
+            <p class="section-subtitle">المسيرة المهنية والإنجازات الرئيسية</p>
+            <div class="timeline-vertical" id="experienceTimeline">
+                <!-- Timeline items will be loaded here dynamically with alternating layout -->
+            </div>
+        </div>
+    </section>
+
+    <!-- BIM Ticker Section -->
+    <section class="bim-ticker" aria-label="BIM highlights">
+        <div class="ticker-track">
+            <div class="ticker-content">
+                تطبيق BIM • تنسيق BIM • البناء الرقمي • معيار ISO 19650 • BIM رباعي وخماسي الأبعاد • اكتشاف التعارضات • نمذجة البنية التحتية • تدريب BIM • تخطيط تنفيذ BIM • Revit الإنشائي • Revit المعماري • Civil 3D • Navisworks • AutoCAD • InfraWorks • Dynamo • Autodesk Construction Cloud •
+            </div>
+            <div class="ticker-content" aria-hidden="true">
+                تطبيق BIM • تنسيق BIM • البناء الرقمي • معيار ISO 19650 • BIM رباعي وخماسي الأبعاد • اكتشاف التعارضات • نمذجة البنية التحتية • تدريب BIM • تخطيط تنفيذ BIM • Revit الإنشائي • Revit المعماري • Civil 3D • Navisworks • AutoCAD • InfraWorks • Dynamo • Autodesk Construction Cloud •
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">خدمات BIM والهندسة الاحترافية</h2>
+            <p class="section-subtitle">خدمات BIM وهندسية عملية وفق أعلى المعايير، مصمَّمة خصيصًا لمشاريع البنية التحتية والإنشاءات.</p>
+            <div class="services-grid" id="servicesGrid">
+                <!-- Services will be loaded here -->
+            </div>
+        </div>
+        <div class="services-cta">
+            <h3 class="services-cta-text">هل لديك مشروع أو احتياج تدريبي؟</h3>
+            <div class="services-cta-buttons">
+                <a href="#contact" class="btn btn-primary btn-large">طلب عرض سعر</a>
+                <a href="https://wa.me/00201096189832" class="btn btn-outline btn-large" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-whatsapp"></i> جدوِّل استشارة
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clients Logos Section -->
+    <section id="clients" class="clients">
+        <div class="container">
+            <h2 class="section-title">الشركات والمكاتب التي دربناها</h2>
+            <p class="section-subtitle">مؤسسات تثق في كفاءتنا وخبرتنا</p>
+            <div class="clients-grid" id="clientsGrid">
+                <!-- Client logos will be loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Training Showcase Section -->
+    <section id="training-showcase" class="training-showcase">
+        <div class="training-showcase-grid">
+            <!-- Training info on the left -->
+            <div class="training-showcase-left">
+                <div class="training-info-box">
+                    <div>
+                        <h3 class="training-title" id="trainingTitle"></h3>
+                        <p class="training-subtitle-text" id="trainingSubtitle"></p>
+                        <p class="training-description" id="trainingDescription"></p>
+                    </div>
+                    
+                    <div class="training-controls">
+                        <button class="training-btn" id="prevTraining" aria-label="Previous training">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <div class="training-dots" id="trainingDots"></div>
+                        <button class="training-btn" id="nextTraining" aria-label="Next training">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Training image on the right -->
+            <div class="training-showcase-right">
+                <img src="" alt="Training session" class="training-showcase-image" id="trainingImage">
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="courses">
+        <div class="container">
+            <h2 class="section-title">الدورات التدريبية التي أقدمها</h2>
+            <p class="section-subtitle">برامج التطوير المهني والتعلم الاحترافي</p>
+            <div class="courses-grid" id="coursesGrid">
+                <!-- Courses will be loaded here -->
+            </div>
+            <p class="section-note">= = اضغط على أي دورة لعرض التفاصيل على Behance = = </p>
+        </div>
+    </section>
+
+    <!-- BIM Ticker Section -->
+    <section class="bim-ticker" aria-label="BIM highlights">
+        <div class="ticker-track">
+            <div class="ticker-content">
+                تطبيق BIM • تنسيق BIM • البناء الرقمي • معيار ISO 19650 • BIM رباعي وخماسي الأبعاد • اكتشاف التعارضات • نمذجة البنية التحتية • تدريب BIM • تخطيط تنفيذ BIM • Revit الإنشائي • Revit المعماري • Civil 3D • Navisworks • AutoCAD • InfraWorks • Dynamo • Autodesk Construction Cloud •
+            </div>
+            <div class="ticker-content" aria-hidden="true">
+                تطبيق BIM • تنسيق BIM • البناء الرقمي • معيار ISO 19650 • BIM رباعي وخماسي الأبعاد • اكتشاف التعارضات • نمذجة البنية التحتية • تدريب BIM • تخطيط تنفيذ BIM • Revit الإنشائي • Revit المعماري • Civil 3D • Navisworks • AutoCAD • InfraWorks • Dynamo • Autodesk Construction Cloud •
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section - Temporarily Hidden -->
+    <!--
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title">Portfolio</h2>
+            <p class="section-subtitle">Featured projects and case studies</p>
+            <div class="portfolio-filters" id="portfolioFilters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <!-- Filter buttons will be loaded dynamically -->
+            </div>
+            <div class="portfolio-grid" id="portfolioGrid">
+                <!-- Portfolio items will be loaded here -->
+            </div>
+        </div>
+    </section>
+    -->
+
+    <!-- Featured Major Projects Slider -->
+    <section class="featured-projects-section">
+        <h2 class="section-title">أبرز المشاريع الكبرى</h2>
+        <div class="featured-projects-slider">
+            <div class="slider-container" id="featuredProjectsSlider">
+                <!-- Featured projects will be loaded here -->
+            </div>
+            <button class="slider-btn slider-prev" onclick="changeSlide(-1)">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="slider-btn slider-next" onclick="changeSlide(1)">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+        <div class="slider-dots" id="sliderDots"></div>
+    </section>
+
+    <!-- Academic Qualifications Section -->
+    <section id="qualifications" class="qualifications">
+        <div class="container">
+            <h2 class="section-title">المؤهلات الأكاديمية</h2>
+            <p class="section-subtitle">الخلفية التعليمية والدرجات العلمية</p>
+            <div class="qualifications-grid" id="qualificationsGrid">
+                <!-- Qualifications will be loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications">
+        <div class="container">
+            <h2 class="section-title">الشهادات الاحترافية الدولية</h2>
+            <p class="section-subtitle">اعتمادات معترف بها دوليًا</p>
+            <div class="certifications-grid" id="certificationsGrid">
+                <!-- Certifications will be loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Gallery Slider -->
+    <section id="certificates-gallery" class="certificates-gallery">
+        <div class="container">
+            <div class="certificates-slider-wrapper">
+                <div class="certificates-slider" id="certificatesSlider">
+                    <!-- Certificate images will be loaded here -->
+                </div>
+            </div>
+            <div class="slider-controls">
+                <button class="slider-btn" id="prevCert" aria-label="Previous certificate">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="slider-dots" id="certDots"></div>
+                <button class="slider-btn" id="nextCert" aria-label="Next certificate">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- BIM Ticker Section -->
+    <section class="bim-ticker" aria-label="BIM highlights">
+        <div class="ticker-track">
+            <div class="ticker-content">
+                تطبيق BIM • تنسيق BIM • البناء الرقمي • معيار ISO 19650 • BIM رباعي وخماسي الأبعاد • اكتشاف التعارضات • نمذجة البنية التحتية • تدريب BIM • تخطيط تنفيذ BIM • Revit الإنشائي • Revit المعماري • Civil 3D • Navisworks • AutoCAD • InfraWorks • Dynamo • Autodesk Construction Cloud •
+            </div>
+            <div class="ticker-content" aria-hidden="true">
+                تطبيق BIM • تنسيق BIM • البناء الرقمي • معيار ISO 19650 • BIM رباعي وخماسي الأبعاد • اكتشاف التعارضات • نمذجة البنية التحتية • تدريب BIM • تخطيط تنفيذ BIM • Revit الإنشائي • Revit المعماري • Civil 3D • Navisworks • AutoCAD • InfraWorks • Dynamo • Autodesk Construction Cloud •
+            </div>
+        </div>
+    </section>
+
+    <!-- Software & Tools Section -->
+    <section id="tools" class="tools">
+        <div class="container">
+            <h2 class="section-title">البرامج والأدوات</h2>
+            <p class="section-subtitle">الكفاءة التقنية والإتقان في الاستخدام</p>
+            <div class="tools-grid" id="toolsGrid">
+                <!-- Tools will be loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 class="section-title">ماذا قالوا عنا</h2>
+            <p class="section-subtitle">موثوق به من قِبَل المكاتب الهندسية والمقاولين والمحترفين في منطقة الشرق الأوسط وشمال أفريقيا.</p>
+            <div class="testimonials-slider-row">
+                <button class="testimonials-nav-btn testimonials-nav-prev" id="prevTestimonial" aria-label="Previous testimonial">
+                    <i class="fas fa-chevron-left" aria-hidden="true"></i>
+                </button>
+                <div class="swiper testimonials-swiper" id="testimonialsSwiper" aria-live="polite">
+                    <div class="swiper-wrapper testimonials-carousel" id="testimonialsCarousel">
+                        <!-- Testimonials will be loaded here -->
+                    </div>
+                </div>
+                <button class="testimonials-nav-btn testimonials-nav-next" id="nextTestimonial" aria-label="Next testimonial">
+                    <i class="fas fa-chevron-right" aria-hidden="true"></i>
+                </button>
+            </div>
+            <div class="testimonials-pagination swiper-pagination" id="testimonialsPagination" aria-label="Testimonials pagination"></div>
+        </div>
+    </section>
+
+    <!-- Corporate CTA Section -->
+    <section id="cta" class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">لنصنع شيئًا عظيمًا معًا</h2>
+                <p class="cta-description">هل أنت مستعد لبدء مشروعك الهندسي القادم؟ تواصل معنا اليوم</p>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn btn-primary btn-large">جدوِّل استشارة</a>
+                    <a href="#services" class="btn btn-outline btn-large">استعرض الخدمات</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">تواصل معنا</h2>
+            <p class="section-subtitle">ابدأ محادثة معنا الآن</p>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>البريد الإلكتروني</h4>
+                            <p id="contactEmail"></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>الهاتف</h4>
+                            <p id="contactPhone"></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>الموقع</h4>
+                            <p id="contactLocation"></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <div>
+                            <h4>واتساب</h4>
+                            <p id="contactWhatsapp"></p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm" data-emailjs-public-key="pmve4ZxWliMqrn0g6" data-emailjs-service-id="service_uvsxh05" data-emailjs-template-id="template_povivng">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="اسمك" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="بريدك الإلكتروني" required>
+                    </div>
+                    <div class="form-group">
+                        <div class="phone-input-group">
+                            <select id="countryCode" name="countryCode" aria-label="كود الدولة">
+                                <option value="+20">مصر (+20)</option>
+                                <option value="+966">السعودية (+966)</option>
+                                <option value="+971">الإمارات (+971)</option>
+                                <option value="+965">الكويت (+965)</option>
+                                <option value="+974">قطر (+974)</option>
+                                <option value="+973">البحرين (+973)</option>
+                                <option value="+964">العراق (+964)</option>
+                                <option value="+90">تركيا (+90)</option>
+                                <option value="+34">إسبانيا (+34)</option>
+                                <option value="Other">أخرى</option>
+                            </select>
+                            <input type="tel" id="phone" name="phone" placeholder="رقم هاتفك">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <select id="service" name="service" required>
+                            <option value="">اختر الخدمة</option>
+                            <option value="engineering">استشارات هندسية</option>
+                            <option value="bim">خدمات BIM</option>
+                            <option value="infrastructure">تخطيط البنية التحتية</option>
+                            <option value="training">التدريب والدورات</option>
+                            <option value="other">أخرى</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" placeholder="رسالتك" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-large">إرسال الرسالة</button>
+                    <div class="form-message" id="formMessage"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 id="footerBrand"></h3>
+                    <p id="footerDescription"></p>
+                    <p id="footerLocation" class="footer-location"></p>
+                </div>
+                <div class="footer-section">
+                    <h4>الخدمات</h4>
+                    <ul class="footer-links" id="footerServices">
+                        <!-- Services links will be loaded here -->
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>تابعنا</h4>
+                    <div class="social-links" id="socialLinks">
+                        <!-- Social links will be loaded here -->
+                    </div>
+                    <div class="footer-logo">
+                        <img src="assets/Mahmoud Elmekawy Logo-2.png" alt="Mahmoud Elmekawy Logo" class="footer-logo-img">
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> <span id="footerCopyright"></span>. جميع الحقوق محفوظة.<br>
+                تصميم وتطوير <a href="https://www.facebook.com/khatwadesigns" id="designerLink" class="designer-link" target="_blank" rel="noopener noreferrer">&copy; <span class="designer-name">Khatwa Designs</span></a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/00966531175199" class="whatsapp-float" id="whatsappFloat" aria-label="Contact us on WhatsApp" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/data-loader.js?v=20260311"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="js/main.js?v=20260311"></script>
+    <script src="js/counter.js?v=20260308"></script>
+</body>
+</html>

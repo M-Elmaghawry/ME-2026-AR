@@ -1,0 +1,50 @@
+{
+  "courses": [
+    {
+      "title": "أساسيات BIM للمهندسين المدنيين",
+      "category": "BIM",
+      "description": "مقدمة شاملة لمفاهيم نمذجة معلومات البناء (BIM) وتدفقات العمل وأفضل الممارسات. مثالية للمهندسين الراغبين في الانتقال إلى عالم BIM.",
+      "image": "assets/courses/BIM Fundamentals for Civil Engineers.webp",
+      "duration": "ساعة واحدة",
+      "level": "مبتدئ",
+      "behanceUrl": "https://www.udemy.com/course/bim-introduction-free/?referralCode=25EADC46D87F0DCA809A"
+    },
+    {
+      "title": "تدريب Revit Structure الاحترافي",
+      "category": "BIM",
+      "description": "مقدمة شاملة لنمذجة معلومات البناء وبرنامج Autodesk Revit للهندسة الإنشائية. تعلّم تقنيات النمذجة والتوثيق والتعاون لتسليم المشاريع بكفاءة عالية.",
+      "image": "assets/courses/Revit Structure Professional Training.webp",
+      "duration": "60 ساعة",
+      "level": "مبتدئ",
+      "behanceUrl": "https://www.behance.net/gallery/187155589/_"
+    },
+    {
+      "title": "ورشة Revit Structure - 01",
+      "category": "Revit",
+      "description": "إتقان برنامج Autodesk Revit للمشاريع الإنشائية. تعلّم تقنيات النمذجة المتقدمة من خلال مشروع عملي من البداية حتى النهاية.",
+      "image": "assets/courses/Revit Structure Workshop - 01.webp",
+      "duration": "10 ساعات",
+      "level": "متوسط",
+      "behanceUrl": "https://www.behance.net/gallery/197545865/_"
+    },
+    {
+      "title": "ورشة Revit Structure - 02",
+      "category": "Revit",
+      "description": "تعلّم اكتشاف التعارضات ومراجعة التنسيق والمحاكاة الرباعية الأبعاد باستخدام Autodesk Navisworks Manage.",
+      "image": "assets/courses/Revit Structure Workshop - 02.webp",
+      "duration": "10 ساعات",
+      "level": "متوسط",
+      "behanceUrl": "https://www.behance.net/gallery/186142533/_"
+    },
+    {
+      "title": "ورشة Revit Structure - 03",
+      "category": "Revit",
+      "description": "تدريب متكامل على AutoCAD Civil 3D لتصميم المواقع والممرات وشبكات الأنابيب والتوثيق الإنشائي.",
+      "image": "assets/courses/Revit Structure Workshop - 03.webp",
+      "duration": "12 ساعة",
+      "level": "متقدم",
+      "behanceUrl": "https://www.behance.net/gallery/186280023/_"
+    }
+  ]
+}
+   

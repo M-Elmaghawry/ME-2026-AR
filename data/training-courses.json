@@ -1,0 +1,34 @@
+{
+  "trainings": [
+    {
+      "title": "تدريب على الموقع",
+      "subtitle": "تدريب ميداني عملي على تطبيق تقنيات BIM",
+      "description": "برنامج تدريبي ميداني شامل يُنفَّذ في مواقع البناء الحقيقية مع مشاريع واقعية.",
+      "image": "assets/training-courses/05-Site-Training.jpg"
+    },
+    {
+      "title": "تدريب دار وإعمار",
+      "subtitle": "تدريب تطبيق BIM لفرق البناء والتشييد",
+      "description": "تدريب متخصص لمحترفي البناء على تقنيات BIM وتنسيق المشاريع.",
+      "image": "assets/training-courses/01-Dar-Wa-Emaar.jpg"
+    },
+    {
+      "title": "تدريب مهندسي SAR",
+      "subtitle": "تدريب على إدارة مشاريع البنية التحتية",
+      "description": "تدريب متقدم للمهندسين على تطبيق BIM في مشاريع البنية التحتية للسكك الحديدية.",
+      "image": "assets/training-courses/02-SAR-Engineers.jpg"
+    },
+    {
+      "title": "Gulf Consult الخبر",
+      "subtitle": "ورشة تقنيات البناء الرقمي",
+      "description": "ورشة عمل حول الأدوات الرقمية الحديثة وتنسيق BIM لشركات الاستشارات الهندسية.",
+      "image": "assets/training-courses/03-Gulf-Consult-Alkhobar.jpg"
+    },
+    {
+      "title": "IAEMS القاهرة",
+      "subtitle": "التعليم الهندسي وأساسيات BIM",
+      "description": "دورة أساسيات BIM الشاملة لطلاب الهندسة والمهنيين.",
+      "image": "assets/training-courses/04-IAEMS-Cairo.jpg"
+    }
+  ]
+}

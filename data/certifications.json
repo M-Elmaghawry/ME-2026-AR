@@ -1,0 +1,32 @@
+{
+  "certifications": [
+    {
+      "name": "مهندس محترف معتمد",
+      "issuer": "هيئة المهندسين السعوديين",
+      "year": "2022",
+      "icon": "fas fa-award",
+      "image": "assets/certificates/01-ME-Saudi-Professional.jpg"
+    },
+    {
+      "name": "مدرب معتمد من أوتوديسك",
+      "issuer": "Autodesk",
+      "year": "2021",
+      "icon": "fas fa-award",
+      "image": "assets/certificates/02-ME-Autodesk-Certified-Instuctor.jpg"
+    },
+    {
+      "name": "محترف معتمد في Revit الإنشائي",
+      "issuer": "Autodesk",
+      "year": "2017",
+      "icon": "fas fa-award",
+      "image": "assets/certificates/03-ME-Revit-Structure-Certified-Professional.jpg"
+    },
+    {
+      "name": "محترف معتمد في Revit المعماري",
+      "issuer": "Autodesk",
+      "year": "2020",
+      "icon": "fas fa-award",
+      "image": "assets/certificates/04-ME-Revit-Architecture-Certified-Professional.jpg"
+    }
+  ]
+}

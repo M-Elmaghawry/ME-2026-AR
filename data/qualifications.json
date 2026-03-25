@@ -1,0 +1,16 @@
+{
+  "qualifications": [
+    {
+      "degree": "بكالوريوس الهندسة المدنية",
+      "institution": "جامعة المنصورة - مصر",
+      "year": "2012",
+      "icon": "fas fa-graduation-cap"
+    },
+    {
+      "degree": "دبلوم الهندسة المدنية",
+      "institution": "جامعة المنصورة - مصر",
+      "year": "2015",
+      "icon": "fas fa-user-graduate"
+    }
+  ]
+}

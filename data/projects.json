@@ -1,0 +1,57 @@
+{
+  "projects": [
+    {
+      "title": "مشروع نيوم - شيغري",
+      "category": "بنية تحتية",
+      "description": "تنسيق BIM لبنية تحتية مشروع نيوم العملاق، مع تطبيق أساليب البناء الرقمي المتقدمة واكتشاف التعارضات لهذا التطوير المستقبلي.",
+      "image": "assets/projects/01-Shigri-Neom.jpg",
+      "client": "NEOM",
+      "year": "2025",
+      "featured": true
+    },
+    {
+      "title": "مشروع سوارى - مصر",
+      "category": "إداري",
+      "description": "مشروع إداري ضخم في مصر مع إدارة BIM متكاملة وتنسيق هندسي إنشائي شامل.",
+      "image": "assets/projects/02-Swary-Egypt.jpg",
+      "client": "شركة التطوير المصرية",
+      "year": "2023",
+      "featured": true
+    },
+    {
+      "title": "مشروع السكة الجديدة",
+      "category": "تطوير عقاري",
+      "description": "مبنى إداري حديث متعدد الطوابق بتطبيق BIM كامل، مع أنظمة تنسيق وتتبع معقدة.",
+      "image": "assets/projects/03-Elseka-Elgedida.jpg",
+      "client": "الرواد للتطوير",
+      "year": "2018",
+      "featured": true
+    },
+    {
+      "title": "مبنى الإدارة العامة - مصر",
+      "category": "إداري",
+      "description": "مبنى إداري راقٍ في مصر مع تصميم إنشائي متكامل وتنسيق BIM لتحقيق كفاءة تشغيلية عالية.",
+      "image": "assets/projects/04-Admin-Egypt.jpg",
+      "client": "A-360 للتطوير",
+      "year": "2022",
+      "featured": true
+    },
+    {
+      "title": "محطة معالجة مياه الصرف الصحي",
+      "category": "صناعي",
+      "description": "منشأة معالجة مياه الصرف الصحي المتقدمة مع هندسة العمليات الكاملة ونمذجة BIM، وتنسيق معقد للأنابيب والمعدات.",
+      "image": "assets/projects/05-Wastewater-Treatment-Plant.jpg",
+      "client": "شركة المياه والصرف الصحي",
+      "year": "2019",
+      "featured": true
+    },
+    {
+      "title": "مسجد طناح",
+      "category": "مسجد",
+      "description": "تصميم مبنى مسجد بمساحة 1000 م² بتسليم سريع باستخدام أساليب BIM المتقدمة.",
+      "image": "assets/projects/06-Tanah-Mosque.jpg",
+      "client": "جمعية خيرية بمحافظة الدقهلية",
+      "year": "2017"
+    }
+  ]
+}
