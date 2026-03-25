@@ -1,91 +1,67 @@
 # Deployment Checklist
 
-Before deploying your website, complete these steps:
+Use this checklist before publishing the Arabic RTL website.
 
-## ✅ Content Updates
+## 1. Content Verification
 
-- [ ] Update personal information in `data/en/hero.json`
-  - [ ] Name and titles
-  - [ ] Email address
-  - [ ] Phone number
-  - [ ] Location
-  - [ ] WhatsApp number (format: country code + number, no spaces)
-  - [ ] Social media links
+- [ ] Review `data/hero.json` (name, subtitle, contact info, WhatsApp settings, social links)
+- [ ] Review `data/experience.json`
+- [ ] Review `data/services.json`
+- [ ] Review `data/courses.json`
+- [ ] Review `data/projects.json`
+- [ ] Review `data/testimonials.json`
+- [ ] Review `data/certifications.json`
+- [ ] Review `data/qualifications.json`
+- [ ] Review `data/clients.json` and `data/tools.json`
+- [ ] Review `data/training-courses.json`
 
-- [ ] Update experience timeline in `data/en/experience.json`
-- [ ] Add your services in `data/en/services.json`
-- [ ] Add your courses in `data/en/courses.json`
-- [ ] Add your projects in `data/en/projects.json`
-- [ ] Add client testimonials in `data/en/testimonials.json`
-- [ ] Update client logos list in `data/en/clients.json`
+## 2. Assets Validation
 
-## 🖼️ Images
+- [ ] Confirm all image paths referenced in JSON exist under `assets/`
+- [ ] Verify client logos in `assets/clients/`
+- [ ] Verify project images in `assets/projects/`
+- [ ] Verify certificates in `assets/certificates/`
+- [ ] Verify hero and training images load correctly
 
-- [ ] Add client logos to `assets/clients/`
-- [ ] Add course images to `assets/courses/`
-- [ ] Add portfolio images to `assets/portfolio/`
-- [ ] Add testimonial photos to `assets/testimonials/`
-- [ ] Add default avatar image to `assets/` (for missing testimonial images)
+## 3. RTL and UI Validation
 
-## 🔧 Configuration
+- [ ] Confirm `index.html` has `lang="ar" dir="rtl"`
+- [ ] Confirm typography is Cairo and readable across sections
+- [ ] Check navbar, hero, timeline, services, projects, testimonials, and footer alignment in RTL
+- [ ] Check mobile menu behavior in RTL
 
-- [ ] Update page title in `index-en.html` (line 9)
-- [ ] Update meta description in `index-en.html` (line 6)
-- [ ] Update meta keywords in `index-en.html` (line 7)
-- [ ] Update favicon (add to root directory)
+## 4. Functional Testing
+
+- [ ] Open `test.html` and verify all JSON files pass
+- [ ] Test navigation anchors
 - [ ] Test WhatsApp links
-- [ ] Test all navigation links
-- [ ] Test contact form
+- [ ] Test project filtering and sliders
+- [ ] Test contact form validation
+- [ ] Test EmailJS send flow from contact form
 
-## 🎨 Styling (Optional)
+## 5. SEO and Metadata
 
-- [ ] Customize color palette in `css/style.css` (lines 11-15)
-- [ ] Adjust font if needed (currently using Inter)
-- [ ] Test responsive design on multiple devices
+- [ ] Update page title in `index.html`
+- [ ] Update meta description and keywords in `index.html`
+- [ ] Add/verify favicon in root
+- [ ] (Optional) Add Open Graph and Twitter Card tags
 
-## 🌐 Deployment
+## 6. GitHub Pages Deployment
 
-- [ ] Create GitHub repository
-- [ ] Upload all files
-- [ ] Enable GitHub Pages in repository settings
-- [ ] Test deployed site
-- [ ] Check all links work on live site
-- [ ] Test on mobile devices
-- [ ] Test contact form
-- [ ] Test WhatsApp button
+- [ ] Push latest `main` branch to GitHub
+- [ ] Repository Settings > Pages
+- [ ] Source: Deploy from a branch
+- [ ] Branch: `main`, Folder: `/ (root)`
+- [ ] Save and wait for build completion
+- [ ] Verify live URL works on desktop and mobile
 
-## 🔍 SEO & Analytics (Optional)
+## 7. Final QA
 
-- [ ] Add Google Analytics tracking code
-- [ ] Submit sitemap to Google Search Console
-- [ ] Verify site with Google Search Console
-- [ ] Add Open Graph meta tags for social sharing
-- [ ] Add Twitter Card meta tags
-
-## 📱 Testing Checklist
-
-- [ ] Test on Chrome
-- [ ] Test on Firefox
-- [ ] Test on Safari
-- [ ] Test on mobile Chrome
-- [ ] Test on mobile Safari
-- [ ] Test all anchor links
-- [ ] Test portfolio filtering
-- [ ] Test testimonial slider
-- [ ] Test mobile navigation menu
-- [ ] Test form validation
-- [ ] Test WhatsApp links on mobile
-
-## 🚀 Go Live
-
-- [ ] Final content review
-- [ ] Performance check (page load speed)
-- [ ] Accessibility check
-- [ ] Cross-browser testing complete
-- [ ] Mobile responsiveness verified
-- [ ] All images loading correctly
-- [ ] Share site URL
+- [ ] Cross-browser check: Chrome, Edge, Firefox, Safari
+- [ ] Mobile check: Android and iOS browsers
+- [ ] Performance check (image sizes and page load)
+- [ ] Accessibility check (contrast, keyboard navigation, headings)
 
 ---
 
-**Note**: This is a static site with no backend. The contact form is client-side only. For production use, consider integrating a form service like Formspree or EmailJS.
+Note: This is a static site. Backend behavior depends on third-party integrations such as EmailJS.

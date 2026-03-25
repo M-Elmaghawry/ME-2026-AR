@@ -1,193 +1,99 @@
-# Engineering & BIM Services - Professional Website
+# ME-2026-AR - Engineering and BIM Portfolio (Arabic RTL)
 
-A modern, single-page corporate website showcasing Engineering, BIM, and Infrastructure services with a clean, professional design inspired by modern portfolio layouts.
+Single-page portfolio website for Engineering, BIM, and infrastructure services.
+The current version is fully Arabic and RTL, with dynamic content loaded from JSON files.
 
-## 🚀 Features
+## Features
 
-- **Professional Layout**: Side-by-side hero section with profile image
-- **Stats Section**: Eye-catching statistics display
-- **Fully Responsive**: Works perfectly on desktop, tablet, and mobile devices
-- **Dynamic Content**: All content loaded from JSON files for easy updates
-- **No Framework**: Built with vanilla JavaScript for fast loading
-- **Modern Design**: Clean, corporate aesthetic inspired by leading engineering portfolios
-- **WhatsApp Integration**: Floating button and header contact options
-- **SEO Friendly**: Semantic HTML and proper meta tags
+- Arabic-first interface (`lang="ar"`, `dir="rtl"`)
+- Fully responsive layout (desktop, tablet, mobile)
+- Dynamic content rendering from JSON data files
+- WhatsApp integration and EmailJS contact form
+- Testimonial slider, certifications slider, and training showcase
+- Vanilla JavaScript implementation (no framework)
 
-## 📁 Project Structure
+## Project Structure
 
-```
-ME-2026-EN/
-├── index.html          # Main HTML file
-├── css/
-│   └── style.css          # All styles with color palette
-├── js/
-│   ├── data-loader.js     # Handles dynamic content loading
-│   └── main.js            # UI interactions and animations
-├── data/en/               # JSON data files
-│   ├── hero.json          # Hero section + stats data
-│   ├── experience.json    # Timeline data
-│   ├── clients.json       # Client logos
-│   ├── services.json      # Services offerings
-│   ├── courses.json       # Training programs
-│   ├── projects.json      # Portfolio projects
-│   ├── testimonials.json  # Client testimonials
-│   ├── qualifications.json # Academic degrees
-│   ├── certifications.json # Professional certifications
-│   └── tools.json         # Software & tools expertise
-└── assets/                # Images and media files
-    ├── profile.jpg        # Your profile photo
-    ├── clients/           # Client logos
-    ├── courses/           # Course thumbnails
-    ├── portfolio/         # Project images
-    ├── testimonials/      # Client photos
-    ├── certifications/    # Certification badges
-    └── tools/             # Software logos
+```text
+ME-2026-AR/
+|-- index.html
+|-- test.html
+|-- css/
+|   `-- style.css
+|-- js/
+|   |-- data-loader.js
+|   |-- main.js
+|   `-- counter.js
+|-- data/
+|   |-- hero.json
+|   |-- experience.json
+|   |-- services.json
+|   |-- clients.json
+|   |-- courses.json
+|   |-- projects.json
+|   |-- certifications.json
+|   |-- qualifications.json
+|   |-- testimonials.json
+|   |-- tools.json
+|   `-- training-courses.json
+`-- assets/
 ```
 
-## 🎨 Color Palette
+## Content Updates
 
-- **Primary**: #003060 (Navy Blue)
-- **Secondary**: #055c9d
-- **Accent**: #0e86d4
-- **Soft**: #68bbe3
+Update content directly in `data/*.json`.
 
-## 📋 Sections
+- Personal profile and contact: `data/hero.json`
+- Career timeline: `data/experience.json`
+- Services: `data/services.json`
+- Courses: `data/courses.json`
+- Projects: `data/projects.json`
+- Testimonials: `data/testimonials.json`
+- Certifications and qualifications: `data/certifications.json`, `data/qualifications.json`
 
-1. **Hero** - Introduction with name, titles, and value proposition
-2. **Experience Timeline** - Professional journey
-3. **Clients Logos** - Trusted companies
-4. **Services** - Service offerings with features
-5. **Courses** - Training programs
-6. **Portfolio** - Featured projects with filtering
-7. **Testimonials** - Client reviews with slider
-8. **Corporate CTA** - Call to action
-9. **Contact** - Contact form and information
+## Design Customization
 
-## 🛠️ Setup & Customization
+- Main styles: `css/style.css`
+- Color tokens: `:root` CSS variables
+- Primary font: Cairo
+- RTL behavior is already enabled globally; keep directional edits RTL-safe
 
-### 1. Update Your Information
+## Contact Form (EmailJS)
 
-Edit the JSON files in `data/en/` to customize content:
+The contact form uses EmailJS from the browser.
 
-**hero.json** - Update your:
-- Name and titles
-- Contact information (email, phone, location)
-- WhatsApp number (format: country code + number, e.g., "1234567890")
-- Social media links
+1. Create EmailJS account and service.
+2. Create template with keys: `from_name`, `from_email`, `phone`, `service`, `message`, `reply_to`, `sent_at`.
+3. Update form dataset attributes in `index.html`:
+   - `data-emailjs-public-key`
+   - `data-emailjs-service-id`
+   - `data-emailjs-template-id`
 
-**experience.json** - Add your:
-- Work history
-- Education
-- Achievements
+## Local Preview
 
-**services.json** - Define your:
-- Service offerings
-- Features and benefits
+Open `index.html` in browser, or run a local static server for best compatibility.
 
-**And so on for other JSON files...**
+Use `test.html` to validate that all JSON files load correctly.
 
-### 2. Add Your Images
+## GitHub Pages Deployment
 
-Place your images in the `assets/` folder:
-- `assets/clients/` - Client logos
-- `assets/courses/` - Course thumbnails
-- `assets/portfolio/` - Project images
-- `assets/testimonials/` - Client photos
+1. Push repository to GitHub.
+2. Go to repository Settings > Pages.
+3. Source: `Deploy from a branch`.
+4. Branch: `main`, Folder: `/ (root)`.
+5. Save and wait for deployment.
 
-Update image paths in the JSON files accordingly.
+Live URL pattern:
+`https://<username>.github.io/ME-2026-AR/`
 
-### 3. Customize Colors (Optional)
-
-Edit CSS variables in `css/style.css`:
-
-```css
-:root {
-    --primary: #003060;
-    --secondary: #055c9d;
-    --accent: #0e86d4;
-    --soft: #68bbe3;
-}
-```
-
-## 🌐 Deployment to GitHub Pages
-
-1. **Create a GitHub repository**
-2. **Upload all files** to the repository
-3. **Enable GitHub Pages**:
-   - Go to Settings > Pages
-   - Select branch: `main`
-   - Select folder: `/ (root)`
-   - Click Save
-
-Your site will be live at: `https://yourusername.github.io/repository-name/index-en.html`
-
-## 📱 WhatsApp Integration
-
-The WhatsApp functionality is configured in `hero.json`:
-
-```json
-{
-  "whatsapp": "1234567890",
-  "whatsappMessage": "Your default message"
-}
-```
-
-- **Format**: Country code + number (no spaces, no +)
-- **Example**: For +1 (555) 123-4567, use: "15551234567"
-
-## 📧 Contact Form
-
-This project now uses **EmailJS** for real form delivery from the browser.
-
-### EmailJS Setup
-
-1. Create an account at [EmailJS](https://www.emailjs.com/) and add your email service.
-2. Create an email template with these variables:
-  - `from_name`
-  - `from_email`
-  - `phone`
-  - `service`
-  - `message`
-  - `reply_to`
-  - `sent_at`
-3. Open `index.html` and update the `#contactForm` attributes:
-  - `data-emailjs-public-key`
-  - `data-emailjs-service-id`
-  - `data-emailjs-template-id`
-4. Save and test by sending a message from the contact section.
-
-## 🎯 Key Features
-
-### Dynamic Content Loading
-All content is loaded from JSON files, making it easy to update without touching HTML.
-
-### Portfolio Filtering
-Projects can be filtered by category (infrastructure, commercial, industrial, etc.)
-
-### Testimonial Slider
-Auto-rotating testimonials with manual controls
-
-### Smooth Animations
-Intersection Observer API for scroll-triggered animations
-
-### Mobile Navigation
-Responsive hamburger menu for mobile devices
-
-## 🔧 Browser Support
+## Browser Support
 
 - Chrome (latest)
+- Edge (latest)
 - Firefox (latest)
 - Safari (latest)
-- Edge (latest)
 
-## 📄 License
+## Notes
 
-This is a custom-built website template. Modify as needed for your use.
-
-## 🤝 Support
-
-For questions or customization requests, contact via the website form.
-
----
-
-**Built with HTML5, CSS3, and Vanilla JavaScript**
+- This is a static site with no backend.
+- Keep media file names stable to avoid broken JSON image paths.

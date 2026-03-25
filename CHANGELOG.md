@@ -2,6 +2,22 @@
 
 All notable project updates are documented in this file.
 
+## 2026-03-25 — Version 6
+
+### Added
+- Added comprehensive JSON diagnostics page in `test.html` for all data files.
+
+### Changed
+- Completed full Arabic localization across content, interface text, and runtime labels.
+- Enabled full RTL experience using `lang="ar" dir="rtl"` in `index.html`.
+- Switched primary typography to Cairo in `index.html` and `css/style.css`.
+- Updated hardcoded UI strings in `js/main.js` and `js/data-loader.js` to Arabic.
+- Refreshed documentation files to reflect current structure (`data/`, `index.html`) and Arabic deployment.
+
+### Fixed
+- Corrected RTL-specific styling behavior for timeline/service list alignment and directional spacing.
+- Fixed mismatched legacy documentation references to `data/en/*` and `index-en.html`.
+
 ## 2026-02-05 — Version 5
 
 ### Added
@@ -20,7 +36,7 @@ All notable project updates are documented in this file.
 ### Changed
 - Improved responsive behavior across tablet/mobile breakpoints.
 - Refined `clients` section grid behavior using adaptive `minmax` layouts.
-- Refined `Featured Major Projects` responsive layout and image presentation.
+- Refined featured projects responsive layout and image presentation.
 
 ### Fixed
 - Fixed overlap issues between experience cards and BIM ticker on small screens.
@@ -34,7 +50,7 @@ All notable project updates are documented in this file.
 
 ### Changed
 - Updated `js/data-loader.js` to support certifications and training rendering.
-- Added/updated styling for certifications and training showcase in `css/style.css`.
+- Added and updated styling for certifications and training showcase in `css/style.css`.
 
 ### Fixed
 - Fixed data-loader structural issues and improved runtime behavior.
@@ -51,7 +67,7 @@ All notable project updates are documented in this file.
 
 ### Changed
 - Expanded certifications presentation toward slider-based UX.
-- Introduced additional UX/content updates tracked in this period.
+- Introduced additional UX and content updates tracked in this period.
 
 ## 2026-02 — Initial Design Updates
 
@@ -60,14 +76,13 @@ All notable project updates are documented in this file.
 - Stats section.
 - Academic qualifications section.
 - Professional certifications section.
-- Software & tools section.
+- Software and tools section.
 
 ### Changed
 - Updated section titles and hierarchy.
-- Improved responsive behavior for desktop/tablet/mobile.
+- Improved responsive behavior for desktop, tablet, and mobile.
 
 ---
 
 ## Notes
-- Historical details previously split across `UPDATES*.md` files were consolidated here.
 - Source-of-truth for content remains JSON files under `data/`.

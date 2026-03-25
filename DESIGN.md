@@ -1,211 +1,88 @@
-# Design Customization Guide
+# Design Customization Guide (Arabic RTL)
 
-This guide explains how to customize the visual design to match your preferences.
+This guide explains how to customize the current Arabic/RTL version of the website.
 
-## 🎨 Color Scheme
+## 1. Color System
 
-The website uses CSS variables for easy color customization. Edit `css/style.css` (lines 11-15):
-
-```css
-:root {
-    --primary: #003060;    /* Main navy blue - headers, titles */
-    --secondary: #055c9d;  /* Secondary blue - subtitles */
-    --accent: #0e86d4;     /* Accent blue - buttons, highlights */
-    --soft: #68bbe3;       /* Light blue - stats numbers, gradients */
-}
-```
-
-### Color Usage:
-- **Primary (#003060)**: Main headings, navigation, footer background
-- **Secondary (#055c9d)**: Subtitles, secondary text
-- **Accent (#0e86d4)**: Call-to-action buttons, links, highlights
-- **Soft (#68bbe3)**: Stats numbers, icons, gradients
-
-## 📐 Layout Customization
-
-### Hero Section Image Size
-
-Edit `css/style.css` to change hero image dimensions:
-
-```css
-.hero-image {
-    width: 100%;
-    max-width: 400px;  /* Change this value */
-}
-```
-
-### Stats Section Layout
-
-Adjust the number of columns in stats grid:
-
-```css
-.stats-grid {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    /* Change 200px to adjust minimum column width */
-}
-```
-
-### Timeline Cards
-
-Modify timeline card width:
-
-```css
-.timeline {
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    /* Change 280px for wider/narrower cards */
-}
-```
-
-## 🖼️ Image Recommendations
-
-### Profile Photo
-- **Size**: 800x800px (1:1 ratio)
-- **Format**: JPG or PNG
-- **Style**: Professional headshot with clean background
-- **File**: `assets/profile.jpg`
-
-### Client Logos
-- **Size**: 300x150px maximum
-- **Format**: PNG with transparent background preferred
-- **Style**: Company logo on transparent/white background
-
-### Portfolio Images
-- **Size**: 1200x800px (3:2 ratio)
-- **Format**: JPG
-- **Quality**: High resolution, professionally photographed projects
-
-### Certification Badges
-- **Size**: 200x200px (1:1 ratio)
-- **Format**: PNG with transparent background
-- **Style**: Official certification logos
-
-### Software/Tool Logos
-- **Size**: 120x120px (1:1 ratio)
-- **Format**: PNG with transparent background
-- **Style**: Official software logos
-
-## 📝 Typography
-
-The site uses **Inter** font family. To change fonts:
-
-1. Update the Google Fonts import in `index-en.html`:
-```html
-<link href="https://fonts.googleapis.com/css2?family=YOUR-FONT:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-```
-
-2. Update the CSS variable in `css/style.css`:
-```css
-:root {
-    --font-primary: 'YOUR-FONT', sans-serif;
-}
-```
-
-### Recommended Font Alternatives:
-- **IBM Plex Sans** - Modern, technical
-- **Roboto** - Clean, widely supported
-- **Open Sans** - Friendly, professional
-- **Lato** - Elegant, corporate
-
-## 🔲 Section Spacing
-
-Adjust spacing between sections:
-
-```css
-section {
-    padding: var(--spacing-xl) 0;  /* Currently 6rem top/bottom */
-}
-```
-
-Spacing variables:
-- `--spacing-xs: 0.5rem` (8px)
-- `--spacing-sm: 1rem` (16px)
-- `--spacing-md: 2rem` (32px)
-- `--spacing-lg: 4rem` (64px)
-- `--spacing-xl: 6rem` (96px)
-
-## 🎯 Button Styles
-
-Customize button appearance:
-
-```css
-.btn {
-    padding: 0.875rem 2rem;           /* Size */
-    border-radius: var(--radius-md);  /* Roundness */
-    font-weight: 600;                 /* Text weight */
-}
-```
-
-## 📱 Mobile Breakpoints
-
-The design has three responsive breakpoints:
-
-- **Desktop**: > 992px (full layout)
-- **Tablet**: 768px - 992px (adjusted layout)
-- **Mobile**: < 768px (stacked layout)
-
-To customize breakpoints, edit the `@media` queries in `css/style.css`.
-
-## 🌓 Adding Dark Mode (Optional)
-
-To add dark mode support:
-
-1. Add dark mode colors to `:root`:
-```css
-:root {
-    /* Existing colors */
-}
-
-[data-theme="dark"] {
-    --primary: #68bbe3;
-    --secondary: #0e86d4;
-    --white: #1a1a1a;
-    --dark: #ffffff;
-    --light-gray: #2d2d2d;
-}
-```
-
-2. Add toggle button in navigation
-3. Use JavaScript to toggle `data-theme` attribute
-
-## ✨ Animation Speed
-
-Adjust animation timing:
+The project uses CSS variables in `css/style.css`.
 
 ```css
 :root {
-    --transition: all 0.3s ease;  /* Change 0.3s to your preference */
+    --primary: #003060;
+    --secondary: #055c9d;
+    --accent: #0e86d4;
+    --soft: #68bbe3;
 }
 ```
 
-## 🎨 Gradient Customization
+Recommended usage:
+- `--primary`: headings, navbar, footer base
+- `--secondary`: secondary headings and labels
+- `--accent`: CTA buttons and highlights
+- `--soft`: soft gradients and numeric highlights
 
-Customize gradients used in icons and backgrounds:
+## 2. Typography
 
-```css
-background: linear-gradient(135deg, var(--accent), var(--soft));
-/* Change angle (135deg) or colors as needed */
-```
+Current primary font is Cairo.
 
-## 📏 Container Width
+- Font import is configured in `index.html`.
+- Font variable is configured in `css/style.css` (`--font-primary`).
 
-Adjust maximum content width:
+If changing fonts, choose one with strong Arabic support.
 
-```css
-.container {
-    max-width: 1200px;  /* Change this value */
-    margin: 0 auto;
-    padding: 0 var(--spacing-md);
-}
-```
+## 3. RTL Behavior Guidelines
 
----
+The site is globally RTL. Keep these rules while customizing:
 
-## 🚀 Quick Tips
+- Keep `lang="ar" dir="rtl"` in `index.html`.
+- Prefer logical spacing where possible (`margin-inline`, `padding-inline`).
+- If you must use directional properties, verify `right`/`left` behavior in all breakpoints.
+- Re-test pseudo-elements and list markers after directional edits.
 
-1. **Keep it consistent**: Use the color variables throughout
-2. **Test responsively**: Check changes on mobile devices
-3. **Optimize images**: Compress images for faster loading
-4. **Maintain contrast**: Ensure text is readable on backgrounds
-5. **Professional photos**: Use high-quality, professional images
+## 4. Layout Tuning
 
-Need help? Check the main [README.md](README.md) or [DEPLOYMENT.md](DEPLOYMENT.md) for more information.
+Key areas to tune in `css/style.css`:
+
+- Hero section image sizing and content alignment
+- Timeline and card grid min-width values
+- Services/features list alignment in RTL
+- Slider controls positioning for testimonials and certifications
+
+## 5. Images and Media
+
+Recommended sizes:
+
+- Hero/profile image: square high-resolution (at least 800x800)
+- Client logos: transparent PNG preferred, normalized visual height
+- Project images: landscape ratio (around 3:2)
+- Certificates: high-resolution JPEG/PNG with readable text
+
+Always verify image paths in corresponding JSON files under `data/`.
+
+## 6. Responsive Breakpoints
+
+Main breakpoints are defined in `css/style.css`.
+
+- Desktop: > 992px
+- Tablet: 768px to 992px
+- Mobile: < 768px
+
+After any layout update, test:
+- Navigation and mobile menu
+- Hero content wrapping
+- Timeline and cards overlap
+- Sliders and controls touch behavior
+
+## 7. Motion and Transitions
+
+Global transition speed is controlled by CSS variables and component styles.
+Keep animations subtle and readable for Arabic content density.
+
+## 8. Quick QA After Design Changes
+
+- Open `index.html` and inspect desktop/mobile layouts
+- Open `test.html` to ensure data still loads
+- Verify contrast and readability
+- Verify no horizontal scroll appears on mobile
+
+For project-wide setup and deployment details, see `README.md` and `DEPLOYMENT.md`.
