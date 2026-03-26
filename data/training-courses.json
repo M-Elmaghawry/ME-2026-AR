@@ -1,13 +1,13 @@
 {
   "trainings": [
     {
-      "title": "تدريب على الموقع",
+      "title": "تدريب عملى فى الموقع",
       "subtitle": "تدريب ميداني عملي على تطبيق تقنيات BIM",
       "description": "برنامج تدريبي ميداني شامل يُنفَّذ في مواقع البناء الحقيقية مع مشاريع واقعية.",
       "image": "assets/training-courses/05-Site-Training.jpg"
     },
     {
-      "title": "تدريب دار وإعمار",
+      "title": "شركة دار وإعمار",
       "subtitle": "تدريب تطبيق BIM لفرق البناء والتشييد",
       "description": "تدريب متخصص لمحترفي البناء على تقنيات BIM وتنسيق المشاريع.",
       "image": "assets/training-courses/01-Dar-Wa-Emaar.jpg"

@@ -597,7 +597,7 @@ section {
 .ticker-track {
     display: flex;
     width: 200%;
-    animation: ticker-scroll 40s ease-in-out infinite;
+    animation: ticker-scroll 30s linear infinite;
 }
 
 .ticker-content {
@@ -612,8 +612,8 @@ section {
 }
 
 @keyframes ticker-scroll {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
+    0% { transform: translateX(50%); }
+    100% { transform: translateX(0); }
 }
 
 /* ===================================
@@ -848,8 +848,6 @@ section {
     display: flex;
     align-items: center;
     gap: var(--spacing-xs);
-    flex-direction: row-reverse;
-    justify-content: flex-end;
 }
 
 .service-features li::before {
@@ -1149,6 +1147,7 @@ section {
     margin: 0 auto;
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-lg);
+    direction: ltr;
 }
 
 .certificates-slider {
